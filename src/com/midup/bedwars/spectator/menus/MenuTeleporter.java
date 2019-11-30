@@ -26,7 +26,7 @@ public class MenuTeleporter extends Menu {
         Player player = Bukkit.getPlayer(clicked);
         if (player != null) {
             event.getWhoClicked().teleport(player.getLocation());
-            event.getWhoClicked().sendMessage("�eTeleportado para " + clicked);
+            event.getWhoClicked().sendMessage("§eTeleportado para " + clicked);
         }
     }
 
@@ -37,7 +37,7 @@ public class MenuTeleporter extends Menu {
             if (user.isLive()) {
                 Player pOn = Bukkit.getPlayer(user.getUuid());
                 if (pOn != null) {
-                    iv.addItem(new ItemCustom().ownerSkull(pOn.getName(), user.getTeam().getType().getColorCode() + "" + pOn.getName()).addLore("�7Clique para teleportar-se").build());
+                    iv.addItem(new ItemCustom().ownerSkull(pOn.getName(), user.getTeam().getType().getColorCode() + "" + pOn.getName()).addLore("§7Clique para teleportar-se").build());
                 }
             }
         }

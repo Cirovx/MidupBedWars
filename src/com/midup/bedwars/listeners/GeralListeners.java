@@ -325,7 +325,7 @@ public class GeralListeners implements Listener {
         }
         if (Main.getGameManager().getGame().getProtectedLocations().contains(event.getBlockClicked().getLocation())) {
             event.setCancelled(true);
-            player.sendMessage("�cVoc� nao pode colocar agua aqui!");
+            player.sendMessage("§cVocê nao pode colocar agua aqui!");
         }
     }
 
@@ -337,7 +337,7 @@ public class GeralListeners implements Listener {
         }
         if (Main.getGameManager().getGame().getProtectedLocations().contains(event.getBlock().getLocation())) {
             event.setCancelled(true);
-            player.sendMessage("�cVoc� nao pode colocar blocos aqui!");
+            player.sendMessage("§cVocê nao pode colocar blocos aqui!");
         } else {
             if (event.getBlock().getType() == Material.TNT) {
                 if (player.getItemInHand().getAmount() > 1) {

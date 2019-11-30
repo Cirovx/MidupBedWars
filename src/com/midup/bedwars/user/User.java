@@ -40,7 +40,7 @@ public class User implements Comparable<User> {
     }
 
     /**
-     * !!! Observa�ao !!! Metodo criado para tentar solucionar erro esporadico:
+     * !!! Observação !!! Metodo criado para tentar solucionar erro esporadico:
      * http://paste.ubuntu.com/25347066/
      */
     private void addToTeam() {
