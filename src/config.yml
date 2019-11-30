@@ -1,0 +1,16 @@
+############################################################
+# Uso recomendado de configuraçoes de partidas!            #
+# SOLO("Solo")        | 8 Jogadores  | 8 times | Minimo=6  #
+# DOUBLE("Dupla")     | 16 Jogadores | 8 times | Minimo=12 #
+# TRIPLE("Trio")      | 12 Jogadores | 4 times | Minimo=8  #
+# QUARTET("Quarteto") | 16 Jogadores | 4 times | Minimo=12 #
+############################################################
+MatchConfiguration:
+    game-type: 'SOLO'
+    total-teams: 8
+    players-per-team: 2
+    min-players-for-start: 1
+    max-players: 8
+    #Contagem regressiva em segundos, quando atingir minimo de players. Recomendado: 30 
+    countdown-to-start: 5   
+RangePort: 6000
